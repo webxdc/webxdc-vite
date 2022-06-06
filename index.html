@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <script src="webxdc.js"></script>
+    </head>
+    <body>
+        <h1>Hello World!</h1>
+        <form>
+            <input id="input" type="text" placeholder="Message" autofocus />
+            <input type="submit" onclick="sendMsg(); return false;" value="Send" />
+        </form>
+        <p id="output"></p>
+        <p><em><small id="deviceName"></small></em></p>
+        <script>
+         // handle past and future state updates
+         window.webxdc.setUpdateListener(function (update) {
+             document.getElementById('output').innerHTML += "<strong>" + update.payload.name + ":</strong> " + update.payload.msg + "<br>";
+         });
+
+         function sendMsg() {
+             msg = document.getElementById("input").value;
+             info = 'someone typed "' + msg + '"';
+             document.getElementById("input").value = '';
+
+             // send new updates
+             window.webxdc.sendUpdate({
+                 payload: {
+                     name: window.webxdc.selfName,
+                     msg,
+                 },
+                 info,
+             }, info);
+         }
+
+         (function () {
+             window.deviceName.innerHTML = 'You are: ' + window.webxdc.selfName;
+         })()
+        </script>
+    </body>
+</html>
