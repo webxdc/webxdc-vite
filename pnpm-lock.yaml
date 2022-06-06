@@ -2,10 +2,12 @@ lockfileVersion: 5.4
 
 specifiers:
   '@ffflorian/jszip-cli': ^3.1.6
+  eruda: ^2.4.1
   vite: ^2.9.9
 
 devDependencies:
   '@ffflorian/jszip-cli': 3.1.6
+  eruda: 2.4.1
   vite: 2.9.9
 
 packages:
@@ -103,6 +105,10 @@ packages:
     resolution: {integrity: sha512-7dFHNmqeFSEt2ZBsCriorKnn3Z2pj+fd9kmI6QoWw4//DL+icEBfc0U7qJCisqrTsKTjw4fNFy2pW9OqStD84g==}
     dependencies:
       is-arrayish: 0.2.1
+    dev: true
+
+  /eruda/2.4.1:
+    resolution: {integrity: sha512-rI16JoCsyy/pzXbPo7X6EMSUrhbtKZeFZGopiqrmCKxA8GlH61IXjlQAk1SWGpVpkJ6A1z7leuF8EmhFsU+OXQ==}
     dev: true
 
   /esbuild-android-64/0.14.42:
