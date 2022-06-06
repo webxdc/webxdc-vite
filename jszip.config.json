@@ -1,0 +1,18 @@
+{
+    "compressionLevel": 9,
+    "dereferenceLinks": true,
+    "entries": [
+        "dist/assets",
+        "dist/index.html",
+        "icon.png",
+        "manifest.toml"
+    ],
+    "force": true,
+    "ignoreEntries": [
+        "*.map"
+    ],
+    "mode": "add",
+    "outputEntry": "dist/app.xdc",
+    "quiet": false,
+    "verbose": false
+}
