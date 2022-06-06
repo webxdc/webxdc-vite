@@ -13,7 +13,7 @@ A minimalist Vite project template for Webxdc development.
 
 ## Usage
 
-### Installing
+### Installing Dependencies
 
 After cloning this repo for the first time, install dependecies:
 
@@ -44,7 +44,7 @@ The resulting optimized `.xdc` file is saved in `dist/` folder.
 
 ### Releasing
 
-To create a new release with your `.xdc` file:
+To automatically build and create a new GitHub release with your `.xdc` file:
 
 ```
 git tag v1.0.1
