@@ -1,14 +1,16 @@
 {
   "private": true,
-  "packageManager": "pnpm@6.32.3",
+  "packageManager": "pnpm@8.6.1",
   "scripts": {
-    "dev": "vite --host --open",
     "build": "vite build && jszip-cli -c jszip.config.json",
-    "preview": "vite preview"
+    "dev-vite": "vite --port 3000",
+    "dev": "concurrently \"pnpm dev-vite\" \"webxdc-dev run http://localhost:3000\""
   },
   "devDependencies": {
-    "@ffflorian/jszip-cli": "^3.1.6",
-    "eruda": "^2.4.1",
-    "vite": "^2.9.9"
+    "@ffflorian/jszip-cli": "^3.4.1",
+    "eruda": "^3.0.0",
+    "concurrently": "^8.1.0",
+    "vite": "^4.3.2",
+    "webxdc-dev": "^0.16.0"
   }
 }

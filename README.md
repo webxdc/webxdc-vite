@@ -1,12 +1,12 @@
-# Webxdc Vite Template
+# WebXDC Vite Template
 
-A minimalist Vite project template for Webxdc development.
+A minimalist Vite project template for WebXDC development.
 
 ## Features
 
-- ⚡️ Fast development with [Vite 2](https://github.com/vitejs/vite) and [pnpm](https://pnpm.js.org/)
+- ⚡️ Fast development with [Vite](https://github.com/vitejs/vite) and [pnpm](https://pnpm.js.org/)
 
-- 📱 Integrated [Webxdc simulator](https://github.com/webxdc/hello) to test your Webxdc right on the browser while developing,
+- 📱 Integrated [WebXDC emulator](https://github.com/webxdc/webxdc-dev) to test your WebXDC right on the browser while developing,
   and [Eruda](https://github.com/liriliri/eruda) to debug inside Delta Chat.
 
 - 📦 Automatically minify, build and release your `.xdc` file
@@ -23,18 +23,18 @@ pnpm i
 
 ### Testing
 
-To test your work in real time while developing:
+To test your work while developing:
 
 ```
 pnpm dev
 ```
 
 **💡 TIP:** To debug inside Delta Chat, uncomment the `script` tag at the end of
-`index.html` file and your Webxdc will be packaged with developer tools inside!
+`index.html` file and your WebXDC will be packaged with developer tools inside!
 
 ### Building
 
-To package your Webxdc file:
+To package your WebXDC file:
 
 ```
 pnpm build
@@ -53,6 +53,4 @@ git push origin v1.0.1
 
 ## Try it now!
 
-### GitHub Template
-
-[Create a repo from this template on GitHub](https://github.com/webxdc/webxdc-vite/generate).
+[**Create a repo from this template on GitHub**](https://github.com/webxdc/webxdc-vite/generate).

@@ -9,7 +9,8 @@
   ],
   "force": true,
   "ignoreEntries": [
-    "*.map"
+    "*.map",
+    "*~"
   ],
   "mode": "add",
   "outputEntry": "dist/app.xdc",
