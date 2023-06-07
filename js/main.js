@@ -11,7 +11,7 @@ function h(tag, attributes, ...children) {
 
 window.sendMsg = () => {
     let msg = document.getElementById("input").value;
-    let info = 'someone typed "' + msg + '"';
+    let info = window.webxdc.selfName + ': ' + msg;
     document.getElementById("input").value = '';
 
     // send new updates
