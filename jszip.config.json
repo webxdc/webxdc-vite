@@ -1,12 +1,7 @@
 {
   "compressionLevel": 9,
   "dereferenceLinks": true,
-  "entries": [
-    "dist/assets",
-    "dist/index.html",
-    "icon.png",
-    "manifest.toml"
-  ],
+  "entries": ["dist/*"],
   "force": true,
   "ignoreEntries": [
     "*.map",
