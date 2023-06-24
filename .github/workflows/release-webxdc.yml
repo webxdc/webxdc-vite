@@ -3,7 +3,7 @@ name: Release Webxdc
 on:
   push:
     tags:
-      - 'v*.*.*'
+      - "v*.*.*"
 
 jobs:
   build:

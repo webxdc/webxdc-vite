@@ -1,28 +1,41 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <script src="webxdc.js"></script>
-        <link rel="stylesheet" href="./css/main.css">
-    </head>
-    <body>
-        <h1>Chat</h1>
-        <form>
-            <input id="input" type="text" autocomplete="off" placeholder="Message" autofocus />
-            <input class="btn" type="submit" onclick="sendMsg(); return false;" value="Send" />
-        </form>
-        <p id="chat-area"></p>
-        <p><em><small id="deviceName"></small></em></p>
-        <script src="./js/main.js" type="module"></script>
+    <script src="webxdc.js"></script>
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <h1>Chat</h1>
+    <form>
+      <input
+        id="input"
+        type="text"
+        autocomplete="off"
+        placeholder="Message"
+        autofocus
+      />
+      <input
+        class="btn"
+        type="submit"
+        onclick="sendMsg(); return false;"
+        value="Send"
+      />
+    </form>
+    <p id="chat-area"></p>
+    <p>
+      <em><small id="deviceName"></small></em>
+    </p>
+    <script src="./js/main.js" type="module"></script>
 
-        <!-- Uncomment to include developer tools in your webxdc to debug it inside Delta Chat -->
-        <!--
+    <!-- Uncomment to include developer tools in your webxdc to debug it inside Delta Chat -->
+    <!--
              <script type="module">
              import init from 'eruda'
              init.init();
              </script>
         -->
-    </body>
+  </body>
 </html>
