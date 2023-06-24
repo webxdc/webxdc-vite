@@ -1,4 +1,4 @@
-# WebXDC Vite Template
+# WebXDC Vite Template [![CI](https://github.com/webxdc/webxdc-vite/actions/workflows/ci.yml/badge.svg)](https://github.com/webxdc/webxdc-vite/actions/workflows/ci.yml) [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 
 A minimalist Vite project template for WebXDC development.
 
@@ -8,6 +8,10 @@ A minimalist Vite project template for WebXDC development.
 
 - 📱 Integrated [WebXDC emulator](https://github.com/webxdc/webxdc-dev) to test your WebXDC right on the browser while developing,
   and [Eruda](https://github.com/liriliri/eruda) to debug inside Delta Chat.
+
+- ✅ Use [Vitest](http://vitest.dev/) for unit testing
+
+- 📝 Code formatting with [Prettier](https://github.com/prettier/prettier)
 
 - 📦 Automatically minify, build and release your `.xdc` file
 
@@ -21,12 +25,20 @@ After cloning this repo for the first time, install dependecies:
 pnpm i
 ```
 
-### Testing
-
-To test your work while developing:
+### Running tests
 
 ```
-pnpm dev
+pnpm test
+```
+
+### Testing the app in the browser
+
+To test your work in your browser (with hot reloading!) while developing:
+
+```
+pnpm dev-mini
+# Alternatively to test in a more advanced WebXDC emulator:
+npm run dev
 ```
 
 **💡 TIP:** To debug inside Delta Chat, uncomment the `script` tag at the end of
