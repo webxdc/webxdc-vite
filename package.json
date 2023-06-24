@@ -5,14 +5,19 @@
   "packageManager": "pnpm@8.6.1",
   "scripts": {
     "build": "vite build",
-    "dev-vite": "vite --port 3000",
-    "dev": "concurrently \"pnpm dev-vite\" \"webxdc-dev run http://localhost:3000\""
+    "dev-mini": "vite --port 3000",
+    "dev": "concurrently \"pnpm dev-mini\" \"webxdc-dev run http://localhost:3000\"",
+    "format": "prettier --write .",
+    "test": "prettier --check . && vitest"
   },
   "devDependencies": {
     "concurrently": "^8.1.0",
     "eruda": "^3.0.0",
+    "jsdom": "^22.1.0",
+    "prettier": "2.8.8",
     "vite": "^4.3.2",
     "vite-plugin-zip-pack": "^1.0.5",
+    "vitest": "^0.32.2",
     "webxdc-dev": "^0.17.0"
   }
 }

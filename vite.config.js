@@ -18,4 +18,9 @@ export default defineConfig({
             (packageJson.name || "app") + version + ".xdc",
         }),
     ],
+
+  // https://github.com/vitest-dev/vitest
+  test: {
+    environment: "jsdom",
+  },
 });
