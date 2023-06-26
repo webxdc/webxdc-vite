@@ -1,20 +1,19 @@
 import { defineConfig } from "vite";
 import zipPack from "vite-plugin-zip-pack";
 
-//@ts-ignore
-import packageJson from "./package.json";
+import { readFileSync } from "node:fs";
+import * as toml from "toml";
 
-let version = "";
-if (packageJson.version) {
-  version = "_" + packageJson.version;
-}
+const manifest = toml.parse(readFileSync("./public/manifest.toml", "utf-8"));
+let name = manifest.name || "app";
+let version = manifest.version ? "_" + manifest.version : "";
 
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
     zipPack({
       outDir: "dist-xdc",
-      outFileName: (packageJson.name || "app") + version + ".xdc",
+      outFileName: name + version + ".xdc",
     }),
   ],
 
