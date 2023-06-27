@@ -52,7 +52,7 @@ To package your WebXDC file:
 pnpm build
 ```
 
-The resulting optimized `.xdc` file is saved in `dist/` folder.
+The resulting optimized `.xdc` file is saved in `dist-xdc/` folder.
 
 ### Releasing
 
