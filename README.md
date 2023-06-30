@@ -41,15 +41,19 @@ pnpm dev-mini
 npm run dev
 ```
 
-**💡 TIP:** To debug inside Delta Chat, uncomment the `script` tag at the end of
-`index.html` file and your WebXDC will be packaged with developer tools inside!
-
 ### Building
 
 To package your WebXDC file:
 
 ```
 pnpm build
+```
+
+To package your WebXDC with developer tools inside to debug in Delta Chat, set the `NODE_ENV`
+environment variable to "debug":
+
+```
+NODE_ENV=debug pnpm build
 ```
 
 The resulting optimized `.xdc` file is saved in `dist-xdc/` folder.
