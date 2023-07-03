@@ -21,6 +21,7 @@ jobs:
           cache: pnpm
 
       - run: pnpm i
+      - run: pnpm format:check
       - run: pnpm test
       - run: pnpm build
 

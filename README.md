@@ -28,6 +28,7 @@ pnpm i
 ### Running tests
 
 ```
+pnpm format:check
 pnpm test
 ```
 
@@ -63,7 +64,7 @@ The resulting optimized `.xdc` file is saved in `dist-xdc/` folder.
 To automatically build and create a new GitHub release with your `.xdc` file:
 
 ```
-git tag v1.0.1
+git tag -a v1.0.1
 git push origin v1.0.1
 ```
 
