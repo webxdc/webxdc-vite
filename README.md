@@ -19,7 +19,7 @@ A minimalist Vite project template for WebXDC development.
 
 ### Installing Dependencies
 
-After cloning this repo for the first time, install dependecies:
+After cloning this repo, install dependecies:
 
 ```
 pnpm i
@@ -44,13 +44,13 @@ pnpm dev
 
 ### Building
 
-To package your WebXDC file:
+To package the WebXDC file:
 
 ```
 pnpm build
 ```
 
-To package your WebXDC with developer tools inside to debug in Delta Chat, set the `NODE_ENV`
+To package the WebXDC with developer tools inside to debug in Delta Chat, set the `NODE_ENV`
 environment variable to "debug":
 
 ```
@@ -61,7 +61,7 @@ The resulting optimized `.xdc` file is saved in `dist-xdc/` folder.
 
 ### Releasing
 
-To automatically build and create a new GitHub release with your `.xdc` file:
+To automatically build and create a new GitHub release with the `.xdc` file:
 
 ```
 git tag -a v1.0.1
