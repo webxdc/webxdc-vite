@@ -12,6 +12,7 @@ function eruda(debug = undefined) {
   const erudaSrc = readFileSync("./node_modules/eruda/eruda.js", "utf-8");
   return {
     name: "vite-plugin-eruda",
+    apply: "build",
     transformIndexHtml(html) {
       const tags = [
         {
