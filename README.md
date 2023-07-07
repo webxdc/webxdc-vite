@@ -39,7 +39,7 @@ To test your work in your browser (with hot reloading!) while developing:
 ```
 pnpm dev-mini
 # Alternatively to test in a more advanced WebXDC emulator:
-npm run dev
+pnpm dev
 ```
 
 ### Building
