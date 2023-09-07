@@ -52,11 +52,11 @@ function eruda(debug = undefined) {
 export default defineConfig({
   plugins: [
     legacy({ renderModernChunks: false }),
+    eruda(),
     zipPack({
       outDir: "dist-xdc",
       outFileName: name + version + ".xdc",
     }),
-    eruda(),
   ],
 
   // https://github.com/vitest-dev/vitest
