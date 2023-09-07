@@ -1,5 +1,6 @@
-import { defineConfig } from "vite";
+import legacy from "@vitejs/plugin-legacy";
 import zipPack from "vite-plugin-zip-pack";
+import { defineConfig } from "vite";
 
 import { readFileSync } from "node:fs";
 import * as toml from "toml";
@@ -50,6 +51,7 @@ function eruda(debug = undefined) {
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
+    legacy({ renderModernChunks: false }),
     zipPack({
       outDir: "dist-xdc",
       outFileName: name + version + ".xdc",
