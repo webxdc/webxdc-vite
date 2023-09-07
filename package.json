@@ -1,15 +1,15 @@
 {
   "private": true,
-  "packageManager": "pnpm@8.6.1",
   "scripts": {
     "build": "vite build",
     "dev-mini": "vite --port 3000",
-    "dev": "concurrently \"pnpm dev-mini\" \"webxdc-dev run http://localhost:3000\"",
+    "dev": "concurrently \"npm run dev-mini\" \"webxdc-dev run http://localhost:3000\"",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "test": "vitest"
   },
   "devDependencies": {
+    "@vitejs/plugin-legacy": "^4.0.2",
     "concurrently": "^8.1.0",
     "eruda": "^3.0.0",
     "jsdom": "^22.1.0",

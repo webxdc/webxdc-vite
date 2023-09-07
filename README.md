@@ -15,6 +15,8 @@ A minimalist Vite project template for WebXDC development.
 
 - 📦 Automatically minify, build and release your `.xdc` file
 
+- 🦕 Automatically support legacy/old browsers
+
 ## Usage
 
 ### Installing Dependencies
