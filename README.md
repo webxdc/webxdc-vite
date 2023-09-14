@@ -9,8 +9,6 @@ A minimalist Vite project template for [WebXDC](https://webxdc.org) development.
 - 📱 Integrated [WebXDC emulator](https://github.com/webxdc/webxdc-dev) to test your WebXDC right on the browser while developing,
   and [Eruda](https://github.com/liriliri/eruda) to debug inside Delta Chat.
 
-- ✅ Use [Vitest](http://vitest.dev/) for unit testing
-
 - 📝 Code formatting with [Prettier](https://github.com/prettier/prettier)
 
 - 📦 Automatically minify, build and release your `.xdc` file
@@ -27,11 +25,10 @@ After cloning this repo, install dependecies:
 pnpm i
 ```
 
-### Running tests
+### Checking code format
 
 ```
-pnpm format:check
-pnpm test
+pnpm check
 ```
 
 ### Testing the app in the browser

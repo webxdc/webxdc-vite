@@ -58,9 +58,4 @@ export default defineConfig({
       outFileName: name + version + ".xdc",
     }),
   ],
-
-  // https://github.com/vitest-dev/vitest
-  test: {
-    environment: "jsdom",
-  },
 });

@@ -23,7 +23,7 @@ window.sendMsg = () => {
       },
       info,
     },
-    info
+    info,
   );
 };
 
@@ -36,8 +36,8 @@ window.onload = () => {
         "p",
         { class: "msg" },
         h("span", { class: "nick" }, update.payload.name, ": "),
-        update.payload.msg
-      )
+        update.payload.msg,
+      ),
     );
   });
 
