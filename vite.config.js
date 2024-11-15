@@ -1,4 +1,4 @@
-import { webxdcViteConfig } from "webxdc-vite-plugins";
+import { webxdcViteConfig } from "@webxdc/vite-plugins";
 import { defineConfig } from "vite";
 
 // https://vitejs.dev/config/
