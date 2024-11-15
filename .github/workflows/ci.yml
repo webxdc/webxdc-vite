@@ -2,10 +2,15 @@ name: CI
 
 on:
   pull_request:
+    branches:
+      - master
+      - main
   push:
     branches:
       - master
       - main
+    tags:
+      - "v*.*.*"
 
 jobs:
   build:
@@ -16,3 +21,14 @@ jobs:
       - run: pnpm i
       - run: pnpm check
       - run: pnpm build
+
+      - name: Release
+        uses: softprops/action-gh-release@v2
+        if: startsWith(github.ref, 'refs/tags/v')
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          body: |
+            Auto-generated release
+          prerelease: ${{ contains(github.event.ref, '-beta') }}
+          fail_on_unmatched_files: true
+          files: ./dist-xdc/*.xdc
