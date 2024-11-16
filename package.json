@@ -12,7 +12,7 @@
     "concurrently": "latest",
     "prettier": "latest",
     "vite": "latest",
-    "webxdc-dev": "latest",
+    "@webxdc/webxdc-dev": "latest",
     "@webxdc/vite-plugins": "latest"
   }
 }
