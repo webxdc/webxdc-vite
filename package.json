@@ -3,7 +3,7 @@
   "type": "module",
   "scripts": {
     "start": "vite --port 3000",
-    "emulator": "concurrently \"npm start\" \"webxdc-dev run http://localhost:3000\"",
+    "emulator": "concurrently \"$npm_execpath start\" \"webxdc-dev run http://localhost:3000\"",
     "fix": "prettier --write .",
     "check": "prettier --check .",
     "build": "vite build"
